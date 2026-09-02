@@ -11,7 +11,7 @@ venv/
 # Database
 db.sqlite3
 
-3 Static folder at project root
+# Static folder at project root
 /static/
 
 # Windows
