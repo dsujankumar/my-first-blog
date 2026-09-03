@@ -1,5 +1,10 @@
 from django.shortcuts import render
+from .models import Post
+from django.utils import timezone
+from django.contrib.auth.models import User
 
 # Create your views here.
 def post_list(request):
-    return render(request, 'myblog/post_list.html', {})
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    users = User.objects.all()
+    return render(request, 'myblog/post_list.html', {'posts': posts, 'users': users})
