@@ -1,10 +1,11 @@
-body {
+body, h2 {
     padding-left: 15px;
+    font-family: sans-serif;
 }
 
 h1 a, h2 a {
     color: #C25100;
-    font-family: 'Lobster';
+    
 }
 
 .page-header {
@@ -23,9 +24,7 @@ h1 a, h2 a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
-}
+ 
 
 .date {
     color: #828282;
